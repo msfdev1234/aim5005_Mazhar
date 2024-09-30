@@ -1,4 +1,10 @@
 author:
+<<<<<<< HEAD
   firstname: "MAZHARUDDIN"
   lastname: "MOHAMMED"
   email: "mmohamm1@mail.yu.edu"
+=======
+  firstname: "YOUR"
+  lastname: "NAME"
+  email: "YOURNAME@example.com"
+>>>>>>> 573e9a00f8be710e9f3b74660b734fc847f18ec5
