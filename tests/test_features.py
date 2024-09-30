@@ -51,14 +51,9 @@ class TestFeatures(TestCase):
         data = [[0, 0], [0, 0], [1, 1], [1, 1]]
         expected = np.array([[-1., -1.], [-1., -1.], [1., 1.], [1., 1.]])
         scaler.fit(data)
-<<<<<<< HEAD
         result = scaler.transform(data)  # Added this line to define result
         assert (result == expected).all(), "Scaler transform does not return expected values. Expect {}. Got: {}".format(expected.reshape(1,-1), result.reshape(1,-1))
 
-=======
-        assert (result == expected).all(), "Scaler transform does not return expected values. Expect {}. Got: {}".format(expected.reshape(1,-1), result.reshape(1,-1))
-        
->>>>>>> 573e9a00f8be710e9f3b74660b734fc847f18ec5
     def test_standard_scaler_single_value(self):
         data = [[0, 0], [0, 0], [1, 1], [1, 1]]
         expected = np.array([[3., 3.]])
@@ -68,7 +63,6 @@ class TestFeatures(TestCase):
         assert (result == expected).all(), "Scaler transform does not return expected values. Expect {}. Got: {}".format(expected.reshape(1,-1), result.reshape(1,-1))
 
     # TODO: Add a test of your own below this line
-<<<<<<< HEAD
 
     def test_standard_scaler_zero_variance(self):
         scaler = StandardScaler()
@@ -102,8 +96,5 @@ class TestFeatures(TestCase):
             with pytest.raises(ValueError):
                 le.transform(["london"])
 
-=======
-    
->>>>>>> 573e9a00f8be710e9f3b74660b734fc847f18ec5
 if __name__ == '__main__':
     unittest.main()
